@@ -1,0 +1,9 @@
+.title {
+  text-align: center;
+}
+
+.todo-item-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
