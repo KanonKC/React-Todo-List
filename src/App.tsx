@@ -23,14 +23,18 @@ function App() {
 				{todoItems.map((item) => (
 					<TodoItem name={item.name} />
 				))}
+
+				<div className="add-todo">
+					<input
+						className="add-todo-input"
+						onChange={(e) => setInputValue(e.target.value)}
+						value={inputValue}
+						type="text"
+						placeholder="Add a new todo"
+					/>
+					<button onClick={handleAddNewTodo}>Add</button>
+				</div>
 			</div>
-			<input
-				onChange={(e) => setInputValue(e.target.value)}
-				value={inputValue}
-				type="text"
-				placeholder="Add a new todo"
-			/>
-			<button onClick={handleAddNewTodo}>Add</button>
 		</div>
 	);
 }

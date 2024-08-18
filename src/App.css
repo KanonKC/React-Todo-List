@@ -7,3 +7,16 @@
   flex-direction: column;
   gap: 4px;
 }
+
+.add-todo {
+  border: 1px dashed black;
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(255, 255, 255);
+}
+
+.add-todo-input {
+  border: none;
+  outline: none;
+}
